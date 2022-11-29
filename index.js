@@ -9,7 +9,7 @@ require('dotenv').config();
     API_VERSION
 } = require("./constants") */
 
-const PORT = process.env.DB_PORT || 3977
+const PORT = process.env.PORT || 3977
 
 mongoose.connect(
     `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}/`,
